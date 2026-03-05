@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -10,10 +11,12 @@ export default function Footer() {
       <div className="resp-px flex flex-col lg:flex-row justify-between items-center py-8">
         {/* Logo and Description */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-5 clash-display font-semibold text-cream text-center lg:text-left mb-8 lg:mb-0">
-          <img
+          <Image
             src="/Images/gdg-logo.svg"
-            className="h-40 w-40"
+            width={160}
+            height={160}
             alt="GDG Logo"
+            className="h-40 w-40"
           />
           <p className="w-52">
             Google Developer Group on campus AISSMS College of Engineering

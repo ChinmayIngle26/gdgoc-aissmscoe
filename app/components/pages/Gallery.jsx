@@ -18,7 +18,7 @@ export default function Gallery() {
     <div>
       <div
         id="gallery"
-        className="scroll-mt-[80px] h-[calc(100vh - 104px)] w-full bg-darkPurple text-cream resp-px p-14"
+        className="scroll-mt-[80px] min-h-[calc(100vh-104px)] w-full bg-darkPurple text-cream resp-px p-14"
       >
         <p className="clash-display font-semibold text-3xl mb-12">Gallery</p>
         <div className="max-w-6xl mx-auto p-5">

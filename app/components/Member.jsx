@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 export default function Member({ member }) {
@@ -8,10 +9,12 @@ export default function Member({ member }) {
     <div className="w-full max-w-[200px]">
       <div className="relative border border-cream h-56 bg-black group overflow-hidden">
         {member.image && (
-          <img
+          <Image
             src={member.image}
             alt={member.name}
-            className="relative top-0 left-0 w-full h-full object-cover"
+            fill
+            sizes="200px"
+            className="object-cover"
           />
         )}
         <div className="absolute bottom-0 left-0 w-full flex justify-center gap-4 items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out bg-gradient-to-b from-transparent via-purple/50 to-purple pb-3 pt-10">

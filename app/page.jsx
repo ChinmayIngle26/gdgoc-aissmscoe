@@ -6,17 +6,26 @@ import WhatsappButton from "./components/WhatsappButton";
 import Team from "./components/pages/Team";
 import Blogs from "./components/pages/Blogs";
 import Gallery from "./components/pages/Gallery";
-import Footer from "./components/Footer";
 import LinkedinButton from "./components/LinkedinButton";
+import { getEvents, getTeamLeads, getBlogs } from "./lib/contentful";
 
-export default function HomePage() {
+// Revalidate every 60 seconds so Contentful changes go live automatically
+export const revalidate = 60;
+
+export default async function HomePage() {
+  const [events, teamLeads, blogs] = await Promise.all([
+    getEvents(),
+    getTeamLeads(),
+    getBlogs(),
+  ]);
+
   return (
     <div className="scroll-smooth">
       <Home />
       <About />
-      <Events />
-      <Team />
-      <Blogs />
+      <Events events={events} />
+      <Team teamLeads={teamLeads} />
+      <Blogs blogs={blogs} />
       <Gallery />
       <div className="z-20 clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col gap-3 justify-end">
         <DiscordButton />
