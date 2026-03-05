@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GDG On Campus — AISSMS College of Engineering, Pune
+
+Official website for the **Google Developer Groups On Campus** chapter at AISSMS College of Engineering, Pune. Explore tech events, coding workshops, team members, blogs, and more.
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org) (App Router, Turbopack)
+- **UI:** React 19, Tailwind CSS 3.4
+- **Animations:** Framer Motion 12
+- **CMS:** [Contentful](https://www.contentful.com)
+- **Icons:** react-icons
+- **Deployment:** [Vercel](https://vercel.com) (ISR, Analytics, Speed Insights)
+
+## Pages & Sections
+
+| Page | Sections |
+| --- | --- |
+| **Home** (`/`) | Hero, About, Events, Team Leads, Blogs, Gallery |
+| **Team** (`/team`) | Full team roster organized by year → department → members |
+
+Floating social links (Discord, WhatsApp, LinkedIn) are available site-wide.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js ≥ 18
+- A [Contentful](https://www.contentful.com) space with the required content types (`teamYear`, `department`, `teamMember`, `event`, `blogs`)
+
+### Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_CONTENTFUL_SPACE_ID=<your-space-id>
+NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN=<your-access-token>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install & Run
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Learn More
+### Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start dev server (Turbopack) |
+| `npm run build` | Production build |
+| `npm start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+├── page.jsx              # Homepage (server component)
+├── layout.jsx            # Root layout, metadata, fonts, analytics
+├── globals.css           # Global styles & Tailwind config
+├── lib/
+│   └── contentful.js     # Contentful client & data-fetching functions
+├── team/
+│   ├── page.jsx          # Team page (server component)
+│   └── TeamContent.jsx   # Team page animations (client component)
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── Member.jsx
+│   ├── EventCard.jsx
+│   └── pages/            # Homepage section components
+│       ├── Home.jsx
+│       ├── About.jsx
+│       ├── Events.jsx
+│       ├── Team.jsx
+│       ├── Blogs.jsx
+│       └── Gallery.jsx
+└── utils/
+```
 
-## Deploy on Vercel
+## Contentful Content Model
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Content Type | Description |
+| --- | --- |
+| `teamYear` | Groups departments by academic year |
+| `department` | Department name + list of team members |
+| `teamMember` | Name, role, image, GitHub, LinkedIn, Twitter/Instagram |
+| `event` | Event title, description, image, date, link |
+| `blogs` | Blog title, content/link |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Theme
+
+Custom color palette defined in `tailwind.config.mjs`:
+
+| Color | Hex |
+| --- | --- |
+| Dark Purple | `#0A002D` |
+| Purple | `#41196F` |
+| Light Purple | `#8172E9` |
+| Cream | `#FAF2E1` |
+| Light Pink | `#FFCFCF` |
+
+Fonts: **Clash Display** (headings) and **Darker Grotesque** (body).
+
+## Deployment
+
+The site is deployed on **Vercel** with:
+
+- **ISR** (Incremental Static Regeneration) — revalidates every 60 seconds
+- **Vercel Analytics** & **Speed Insights** for performance monitoring
+- Security headers (X-Content-Type-Options, X-Frame-Options, Referrer-Policy)
+- Static asset caching for images and fonts
+
+To deploy your own instance, push to a GitHub repo and import it on [Vercel](https://vercel.com/new). Set the environment variables in the Vercel dashboard.
