@@ -44,6 +44,18 @@ export async function getTeamLeads() {
     order: ["sys.createdAt"],
   });
 
+  const rolePriority = (role = "") => {
+    const r = role.toLowerCase().trim();
+
+    if (r === "gdgoc lead") return 0;
+    if (r.includes("chairperson")) return 1;
+    if (r.includes("co-lead")) return 2;
+    if (r.includes("lead")) return 3;
+    if (r.includes("head")) return 4;
+
+    return 5;
+  };
+
   return response.items
     .map((member) => ({
       id: member.sys.id,
@@ -56,10 +68,19 @@ export async function getTeamLeads() {
       linkedin: member.fields.linkedin,
       twitterinstagram: member.fields.twitterinstagram,
     }))
-    .filter(
-      (member) =>
-        member.role?.includes("Lead") || member.role?.includes("Head")
-    );
+    .filter((member) => {
+      const r = member.role?.toLowerCase() || "";
+
+      return (
+        r.includes("lead") ||
+        r.includes("head") ||
+        r.includes("chairperson") ||
+        r.includes("chair")
+      );
+    })
+    .sort((firstMember, secondMember) => {
+      return rolePriority(firstMember.role) - rolePriority(secondMember.role);
+    });
 }
 
 export async function getBlogs() {
