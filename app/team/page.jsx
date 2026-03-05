@@ -25,38 +25,27 @@ export default function TeamPage() {
         const teamYearEntry = response.items[0];
 
         // Safely access and map departments
+        // The Contentful SDK resolves references inline when include >= 2
         const departments = teamYearEntry.fields.departments
           ?.map((department) => {
             if (!department.fields) return null;
 
             const members = department.fields.members
-              ?.map((memberLink) => {
-                if (!memberLink.sys || !memberLink.sys.id) return null;
+              ?.map((member) => {
+                if (!member.fields) return null;
 
-                // Find member in includes
-                const memberEntry = response.includes.Entry?.find(
-                  (entry) => entry.sys.id === memberLink.sys.id
-                );
-
-                if (!memberEntry || !memberEntry.fields) return null;
-
-                // Find image in includes
-                let imageUrl = null;
-                if (memberEntry.fields.image && memberEntry.fields.image.sys) {
-                  const imageAsset = response.includes.Asset?.find(
-                    (asset) => asset.sys.id === memberEntry.fields.image.sys.id
-                  );
-                  imageUrl = imageAsset?.fields?.file?.url || null;
-                }
+                // Image is also resolved inline by the SDK
+                const imageUrl =
+                  member.fields.image?.fields?.file?.url || null;
 
                 return {
-                  id: memberEntry.sys.id,
-                  name: memberEntry.fields.name || "",
-                  role: memberEntry.fields.role || "",
+                  id: member.sys.id,
+                  name: member.fields.name || "",
+                  role: member.fields.role || "",
                   image: imageUrl ? `https:${imageUrl}` : null,
-                  github: memberEntry.fields.github || "",
-                  linkedin: memberEntry.fields.linkedin || "",
-                  twitterinstagram: memberEntry.fields.twitterinstagram || "",
+                  github: member.fields.github || "",
+                  linkedin: member.fields.linkedin || "",
+                  twitterinstagram: member.fields.twitterinstagram || "",
                 };
               })
               .filter(Boolean); // Remove null entries
@@ -116,8 +105,7 @@ export default function TeamPage() {
           <motion.div
             key={yearData.year}
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: yearIndex * 0.2 }}
             className="mb-16"
           >
@@ -130,9 +118,8 @@ export default function TeamPage() {
               <motion.section
                 key={department.name}
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: deptIndex * 0.2 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: deptIndex * 0.1, duration: 0.5 }}
                 className="mb-16"
               >
                 <h3 className="clash-display text-2xl font-semibold mb-8 text-center">
