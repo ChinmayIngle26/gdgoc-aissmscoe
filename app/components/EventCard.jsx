@@ -1,16 +1,19 @@
 import { FaLocationDot, FaRegClock } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function EventCard({ event }) {
   if (!event) return null;
 
   return (
     <div className="clash-display hover:scale-105 transition-transform text-xl bg-darkPurple shadow-md overflow-hidden border border-purple p-5">
-      <div className="w-full aspect-[16/9] bg-lightPurple mb-5">
+      <div className="w-full aspect-[16/9] bg-lightPurple mb-5 relative">
         {event.image && (
-          <img
+          <Image
             src={event.image}
             alt={event.title}
-            className="w-full h-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            className="object-cover"
           />
         )}
       </div>
