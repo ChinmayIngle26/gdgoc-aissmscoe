@@ -7,16 +7,22 @@ import Team from "./components/pages/Team";
 import Blogs from "./components/pages/Blogs";
 import Gallery from "./components/pages/Gallery";
 import LinkedinButton from "./components/LinkedinButton";
-import { getEvents, getTeamLeads, getBlogs } from "./lib/contentful";
+import {
+  getEvents,
+  getTeamLeads,
+  getBlogs,
+  getGalleryImages,
+} from "./lib/contentful";
 
 // Revalidate every 60 seconds so Contentful changes go live automatically
 export const revalidate = 60;
 
 export default async function HomePage() {
-  const [events, teamLeads, blogs] = await Promise.all([
+  const [events, teamLeads, blogs, galleryImages] = await Promise.all([
     getEvents(),
     getTeamLeads(),
     getBlogs(),
+    getGalleryImages(),
   ]);
 
   return (
@@ -26,7 +32,7 @@ export default async function HomePage() {
       <Events events={events} />
       <Team teamLeads={teamLeads} />
       <Blogs blogs={blogs} />
-      <Gallery />
+      <Gallery images={galleryImages} />
       <div className="z-20 clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col gap-3 justify-end">
         <DiscordButton />
         <WhatsappButton />
