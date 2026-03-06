@@ -1,0 +1,3 @@
+## 2026-03-06 - [Missing ARIA Attributes on Hamburger Menus and Copied Components]
+**Learning:** Developers often forget to add `aria-label` and `aria-expanded` to icon-only hamburger menus. Also, when copying similar components (like social media buttons), `aria-label` attributes are often accidentally carried over without being updated (e.g., a LinkedIn button with a WhatsApp ARIA label).
+**Action:** When reviewing icon-only buttons or mobile menus, always verify `aria-label` and state attributes (`aria-expanded`, `aria-hidden`). When encountering repetitive components (like a list of social links), double-check that the accessibility contexts are accurate for each specific item.
