@@ -1,0 +1,543 @@
+
+> gdgoc-aissmscoe@0.1.0 dev /app
+> next dev --turbopack
+
+   ▲ Next.js 15.5.12 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 1448ms
+ ○ Compiling / ...
+ ✓ Compiled / in 8.2s
+ ⨯ ./app/components/DiscordButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mDiscordButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/DiscordButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/LinkedinButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mLinkedinButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/LinkedinButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/Navbar.jsx:4:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { motion[33m,[39m [33mAnimatePresence[39m } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m [32m"next/image"[39m[33m;[39m
+ [90m 7 |[39m[0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/RadialButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mconst[39m buttonVariants [33m=[39m {
+ [90m 5 |[39m   initial[33m:[39m {[0m
+
+
+
+Import traces:
+  Server Component:
+    ./app/components/RadialButton.jsx
+    ./app/components/pages/Events.jsx
+    ./app/page.jsx
+
+  Client Component Browser:
+    ./app/components/RadialButton.jsx [Client Component Browser]
+    ./app/components/pages/Home.jsx [Client Component Browser]
+    ./app/components/pages/Home.jsx [Server Component]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RadialButton.jsx [Client Component SSR]
+    ./app/components/pages/Home.jsx [Client Component SSR]
+    ./app/components/pages/Home.jsx [Server Component]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/WhatsappButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mWhatsappButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/WhatsappButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/pages/Home.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion[33m,[39m useScroll[33m,[39m useTransform } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mRadialButton[39m [36mfrom[39m [32m"../RadialButton"[39m[33m;[39m
+ [90m 5 |[39m[0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/pages/Home.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.1s
+ GET / 500 in 11683ms
+ ⨯ ./app/components/DiscordButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mDiscordButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/DiscordButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/LinkedinButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mLinkedinButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/LinkedinButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/Navbar.jsx:4:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { motion[33m,[39m [33mAnimatePresence[39m } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m [32m"next/image"[39m[33m;[39m
+ [90m 7 |[39m[0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/RadialButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mconst[39m buttonVariants [33m=[39m {
+ [90m 5 |[39m   initial[33m:[39m {[0m
+
+
+
+Import traces:
+  Server Component:
+    ./app/components/RadialButton.jsx
+    ./app/components/pages/Events.jsx
+    ./app/page.jsx
+
+  Client Component Browser:
+    ./app/components/RadialButton.jsx [Client Component Browser]
+    ./app/components/pages/Home.jsx [Client Component Browser]
+    ./app/components/pages/Home.jsx [Server Component]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RadialButton.jsx [Client Component SSR]
+    ./app/components/pages/Home.jsx [Client Component SSR]
+    ./app/components/pages/Home.jsx [Server Component]
+    ./app/page.jsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/WhatsappButton.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mWhatsappButton[39m() {
+ [90m 5 |[39m   [36mreturn[39m ([0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/WhatsappButton.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/components/pages/Home.jsx:2:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { motion[33m,[39m useScroll[33m,[39m useTransform } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mRadialButton[39m [36mfrom[39m [32m"../RadialButton"[39m[33m;[39m
+ [90m 5 |[39m[0m
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/pages/Home.jsx
+    ./app/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 120ms
+ ✓ Compiled in 2.3s
+ ✓ Compiled / in 26ms
+ ⨯ NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "de632745-f8d1-47e9-80b2-fc4687c1a7d0"
+}
+    at async getEvents (app/lib/contentful.js:19:20)
+    at async HomePage (app/page.jsx:21:53)
+  17 |
+  18 | export async function getEvents() {
+> 19 |   const response = await client.getEntries({
+     |                    ^
+  20 |     content_type: "event",
+  21 |     order: ["-fields.dateAndTime"],
+  22 |   }); {
+  digest: '1540770912'
+}
+ GET / 500 in 1419ms
+ ✓ Compiled in 152ms
+ ✓ Compiled / in 60ms
+Failed to fetch blogs from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "8e491f9b-29f5-4e82-8e9b-86e915b8349b"
+}
+    at async getBlogs (app/lib/contentful.js:97:16)
+    at async HomePage (app/page.jsx:21:53)
+   95 |   let response = { items: [] };
+   96 |   try {
+>  97 |     response = await client.getEntries({
+      |                ^
+   98 |       content_type: "blogs",
+   99 |     });
+  100 |   } catch (e) {
+Failed to fetch events from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "de632745-f8d1-47e9-80b2-fc4687c1a7d0"
+}
+    at async getEvents (app/lib/contentful.js:21:16)
+    at async HomePage (app/page.jsx:21:53)
+  19 |   let response = { items: [] };
+  20 |   try {
+> 21 |     response = await client.getEntries({
+     |                ^
+  22 |       content_type: "event",
+  23 |       order: ["-fields.dateAndTime"],
+  24 |     });
+Failed to fetch team leads from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "308fd046-b216-4f0c-886a-a979ce20aa40"
+}
+    at async getTeamLeads (app/lib/contentful.js:47:16)
+    at async HomePage (app/page.jsx:21:53)
+  45 |   let response = { items: [] };
+  46 |   try {
+> 47 |     response = await client.getEntries({
+     |                ^
+  48 |       content_type: "teamMember",
+  49 |       order: ["sys.createdAt"],
+  50 |     });
+Failed to fetch gallery images from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "86ba43e9-ff4d-41bf-928b-f860de97a8f0"
+}
+    at async getGalleryImages (app/lib/contentful.js:169:16)
+    at async HomePage (app/page.jsx:21:53)
+  167 |   let response = { items: [] };
+  168 |   try {
+> 169 |     response = await client.getEntries({
+      |                ^
+  170 |       content_type: "gallery",
+  171 |       order: ["fields.order"],
+  172 |     });
+ GET / 200 in 1089ms
+Failed to fetch events from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "de632745-f8d1-47e9-80b2-fc4687c1a7d0"
+}
+    at async getEvents (app/lib/contentful.js:21:16)
+    at async HomePage (app/page.jsx:21:53)
+  19 |   let response = { items: [] };
+  20 |   try {
+> 21 |     response = await client.getEntries({
+     |                ^
+  22 |       content_type: "event",
+  23 |       order: ["-fields.dateAndTime"],
+  24 |     });
+Failed to fetch blogs from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "8e491f9b-29f5-4e82-8e9b-86e915b8349b"
+}
+    at async getBlogs (app/lib/contentful.js:97:16)
+    at async HomePage (app/page.jsx:21:53)
+   95 |   let response = { items: [] };
+   96 |   try {
+>  97 |     response = await client.getEntries({
+      |                ^
+   98 |       content_type: "blogs",
+   99 |     });
+  100 |   } catch (e) {
+Failed to fetch team leads from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "308fd046-b216-4f0c-886a-a979ce20aa40"
+}
+    at async getTeamLeads (app/lib/contentful.js:47:16)
+    at async HomePage (app/page.jsx:21:53)
+  45 |   let response = { items: [] };
+  46 |   try {
+> 47 |     response = await client.getEntries({
+     |                ^
+  48 |       content_type: "teamMember",
+  49 |       order: ["sys.createdAt"],
+  50 |     });
+Failed to fetch gallery images from contentful NotFound: {
+  "status": 404,
+  "statusText": "Not Found",
+  "message": "The resource could not be found.",
+  "details": {},
+  "request": {
+    "url": "https://cdn.contentful.com:443/spaces/fake_space_id/environments/master/entries",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/vnd.contentful.delivery.v1+json",
+      "X-Contentful-User-Agent": "sdk contentful.js/0.0.0-determined-by-semantic-release; platform node.js/v22.22.0; os Linux/v22.22.0;",
+      "Authorization": "Bearer ...token",
+      "User-Agent": "axios/1.13.6",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "get"
+  },
+  "requestId": "86ba43e9-ff4d-41bf-928b-f860de97a8f0"
+}
+    at async getGalleryImages (app/lib/contentful.js:169:16)
+    at async HomePage (app/page.jsx:21:53)
+  167 |   let response = { items: [] };
+  168 |   try {
+> 169 |     response = await client.getEntries({
+      |                ^
+  170 |       content_type: "gallery",
+  171 |       order: ["fields.order"],
+  172 |     });
+ GET / 200 in 430ms
