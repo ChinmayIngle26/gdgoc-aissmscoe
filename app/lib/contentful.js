@@ -1,19 +1,17 @@
 import { createClient } from "contentful";
 
 if (
-  !process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID ||
-  !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+  !process.env.CONTENTFUL_SPACE_ID ||
+  !process.env.CONTENTFUL_ACCESS_TOKEN
 ) {
   throw new Error("Missing required Contentful environment variables");
 }
 
 const client = createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   environment: "master",
 });
-
-export default client;
 
 // --- Server-side data fetching functions ---
 
@@ -143,4 +141,23 @@ export async function getTeamData() {
       departments: departments || [],
     },
   ];
+}
+
+export async function getGalleryImages() {
+  const response = await client.getEntries({
+    content_type: "gallery",
+    order: ["fields.order"],
+  });
+
+  return response.items
+    .map((item) => ({
+      id: item.sys.id,
+      title: item.fields.title,
+      url: item.fields.image?.fields?.file?.url
+        ? `https:${item.fields.image.fields.file.url}`
+        : null,
+      width: item.fields.image?.fields?.file?.details?.image?.width || 400,
+      height: item.fields.image?.fields?.file?.details?.image?.height || 300,
+    }))
+    .filter((img) => img.url);
 }
