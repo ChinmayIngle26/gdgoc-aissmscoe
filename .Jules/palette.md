@@ -1,0 +1,3 @@
+## 2024-05-14 - Incorrect ARIA Labels and Alt Text from Copy-Pasted Code
+**Learning:** Components duplicated (copy-pasted) often retain original ARIA labels or `alt` texts, rendering screen readers completely confused (e.g., announcing "WhatsApp" for a LinkedIn button).
+**Action:** Always verify `aria-label`, `alt` attributes, and comments when copying existing components to ensure they accurately describe the new component's function.

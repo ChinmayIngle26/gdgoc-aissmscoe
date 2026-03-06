@@ -109,6 +109,8 @@ export default function Navbar() {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
+          aria-label="Toggle Navigation Menu"
+          aria-expanded={menuOpen}
           className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
         >
           <motion.span

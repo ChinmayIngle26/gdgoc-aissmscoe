@@ -16,10 +16,15 @@ const client = createClient({
 // --- Server-side data fetching functions ---
 
 export async function getEvents() {
-  const response = await client.getEntries({
-    content_type: "event",
-    order: ["-fields.dateAndTime"],
-  });
+  let response = { items: [] };
+  try {
+    response = await client.getEntries({
+      content_type: "event",
+      order: ["-fields.dateAndTime"],
+    });
+  } catch (e) {
+    console.warn("Failed to fetch events from contentful", e);
+  }
 
   return response.items.map((event) => ({
     id: event.sys.id,
@@ -37,10 +42,15 @@ export async function getEvents() {
 }
 
 export async function getTeamLeads() {
-  const response = await client.getEntries({
-    content_type: "teamMember",
-    order: ["sys.createdAt"],
-  });
+  let response = { items: [] };
+  try {
+    response = await client.getEntries({
+      content_type: "teamMember",
+      order: ["sys.createdAt"],
+    });
+  } catch (e) {
+    console.warn("Failed to fetch team leads from contentful", e);
+  }
 
   const rolePriority = (role = "") => {
     const r = role.toLowerCase().trim();
@@ -82,9 +92,14 @@ export async function getTeamLeads() {
 }
 
 export async function getBlogs() {
-  const response = await client.getEntries({
-    content_type: "blogs",
-  });
+  let response = { items: [] };
+  try {
+    response = await client.getEntries({
+      content_type: "blogs",
+    });
+  } catch (e) {
+    console.warn("Failed to fetch blogs from contentful", e);
+  }
 
   return response.items.map((blog) => ({
     id: blog.sys.id,
@@ -95,10 +110,15 @@ export async function getBlogs() {
 }
 
 export async function getTeamData() {
-  const response = await client.getEntries({
-    content_type: "teamYear",
-    include: 2,
-  });
+  let response = { items: [] };
+  try {
+    response = await client.getEntries({
+      content_type: "teamYear",
+      include: 2,
+    });
+  } catch (e) {
+    console.warn("Failed to fetch team data from contentful", e);
+  }
 
   if (!response.items || response.items.length === 0) {
     return [];
@@ -144,10 +164,15 @@ export async function getTeamData() {
 }
 
 export async function getGalleryImages() {
-  const response = await client.getEntries({
-    content_type: "gallery",
-    order: ["fields.order"],
-  });
+  let response = { items: [] };
+  try {
+    response = await client.getEntries({
+      content_type: "gallery",
+      order: ["fields.order"],
+    });
+  } catch (e) {
+    console.warn("Failed to fetch gallery images from contentful", e);
+  }
 
   return response.items
     .map((item) => ({
