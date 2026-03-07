@@ -1,0 +1,3 @@
+## 2024-05-18 - Missing ARIA Labels on Icon-Only Buttons
+**Learning:** Found a recurring pattern where icon-only interactive elements (like the mobile hamburger menu, dynamic social links in Member components, and floating action buttons) lacked `aria-label`s or used copy-pasted, incorrect labels. This made the application difficult to navigate for screen reader users.
+**Action:** When creating new components with icon-only buttons or links, ensure they include clear, descriptive `aria-label`s. For buttons with changing states, also verify that attributes like `aria-expanded` are accurately managed.
