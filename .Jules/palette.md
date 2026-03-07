@@ -1,0 +1,1 @@
+## 2024-03-07 - Add ARIA Labels to Hamburger Menu\n**Learning:** Icon-only interactive elements like hamburger menus often lack accessible labels by default, hindering screen reader users.\n**Action:** Always verify if non-text interactive elements possess descriptive `aria-label` attributes and relevant state indicators like `aria-expanded`.
