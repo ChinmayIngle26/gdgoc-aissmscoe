@@ -20,17 +20,17 @@ export default function Member({ member }) {
         <div className="absolute bottom-0 left-0 w-full flex justify-center gap-4 items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out bg-gradient-to-b from-transparent via-purple/50 to-purple pb-3 pt-10">
           <div className="flex gap-4 justify-center">
             {member.github && (
-              <Link href={member.github} target="_blank">
+              <Link href={member.github} target="_blank" aria-label={`${member.name}'s GitHub profile`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream rounded-sm">
                 <FaGithub className="text-cream w-7 h-7 hover:text-lightPurple transition-colors" />
               </Link>
             )}
             {member.linkedin && (
-              <Link href={member.linkedin} target="_blank">
+              <Link href={member.linkedin} target="_blank" aria-label={`${member.name}'s LinkedIn profile`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream rounded-sm">
                 <FaLinkedin className="text-cream w-7 h-7 hover:text-blue-500 transition-colors" />
               </Link>
             )}
             {member.twitterinstagram && (
-              <Link href={member.twitterinstagram} target="_blank">
+              <Link href={member.twitterinstagram} target="_blank" aria-label={`${member.name}'s ${member.twitterinstagram.includes('instagram') ? 'Instagram' : 'Twitter'} profile`} className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream rounded-sm">
                 {member.twitterinstagram.includes("instagram") ? (
                   <FaInstagram className="text-cream w-7 h-7 hover:text-fuchsia-400 transition-colors" />
                 ) : (
