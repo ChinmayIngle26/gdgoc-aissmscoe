@@ -1,0 +1,3 @@
+## 2024-05-18 - Added ARIA attributes and focus styles to mobile hamburger menu
+**Learning:** Icon-only buttons (like the hamburger menu in navigation components) are completely opaque to screen readers without an `aria-label`, and interactive states (like expanded/collapsed) need `aria-expanded` to be explicitly announced. Keyboard focus styles using `focus-visible:ring-2` on `motion.button` components ensure users can see what element has focus, greatly improving navigability.
+**Action:** When adding interactive icon-only components using `framer-motion`, always include `aria-label`, stateful ARIA attributes like `aria-expanded`, and visually distinct `focus-visible` styles to ensure full keyboard and screen reader accessibility.
