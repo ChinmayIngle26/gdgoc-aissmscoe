@@ -1,0 +1,3 @@
+## 2024-05-18 - Mobile Menu Button Accessibility
+**Learning:** Custom interactive elements (like an animated framer-motion hamburger menu) completely omit their state to screen readers unless explicitly handled. While hover interactions are designed visually, `focus-visible` must be set so keyboard navigators know what is currently focused.
+**Action:** Always add `aria-expanded={isOpen}`, dynamic `aria-label`s ("Open menu" / "Close menu"), and visible focus rings (`focus-visible:ring-2`) to all custom toggle buttons.
