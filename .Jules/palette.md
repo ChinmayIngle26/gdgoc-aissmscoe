@@ -1,0 +1,3 @@
+## 2024-05-21 - Copy-Paste Errors in Accessibility Attributes
+**Learning:** When developers copy-paste components (like social buttons), they often forget to update `aria-label` and `alt` text. In this app, the LinkedIn button was incorrectly labeled as "Join Whatsapp Group" for screen readers. Icon-only buttons (like a hamburger menu) are also prone to missing accessibility labels.
+**Action:** Always verify `aria-label` and `alt` text matches the visual/functional purpose of the component, especially in repeated UI patterns or when adapting existing components. Ensure all icon-only buttons have descriptive `aria-label`s.
