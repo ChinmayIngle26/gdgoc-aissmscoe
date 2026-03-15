@@ -1,0 +1,3 @@
+## 2024-10-24 - Context for Interactive Animations in Mobile Navs
+**Learning:** Animated hamburger menus (often created with `framer-motion`) frequently lack ARIA labels and `aria-expanded` attributes because the visual state change (lines turning into an X) seems self-evident visually.
+**Action:** Always check mobile navigation toggles, especially animated ones, for `aria-label` and `aria-expanded` attributes. Also ensure they have a visible focus state for keyboard navigation.
