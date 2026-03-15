@@ -1,0 +1,3 @@
+## 2024-05-14 - Copy-Paste A11y Errors & Missing Keyboard Hover States
+**Learning:** I found that when components like floating social buttons are duplicated (e.g. creating LinkedIn from WhatsApp), `aria-label`s, `alt` text, and comments often go un-updated, leading to confusing screen reader experiences (a LinkedIn button announcing itself as "Join Whatsapp Group"). Furthermore, expanding hover animations on buttons are completely missed by keyboard-only users if `whileFocus` isn't mirroring `whileHover`.
+**Action:** When adding hover animations to buttons that reveal context, always pair them with equivalent focus animations. Always double-check `aria-label` and `alt` tags when duplicating components to ensure they match the new context.
