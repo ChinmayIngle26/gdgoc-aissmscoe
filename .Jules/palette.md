@@ -1,0 +1,3 @@
+## 2024-05-24 - Floating Social Buttons Focus and ARIA
+**Learning:** Copy-paste errors frequently result in incorrect ARIA labels for similar components (e.g., `LinkedinButton` had the label for WhatsApp). Also, floating interaction buttons using Framer Motion's `whileHover` for expansion are inaccessible to keyboard users unless explicitly paired with `whileFocus`.
+**Action:** Always pair `whileHover` with `whileFocus` for expanding elements to ensure keyboard accessibility, and double-check all text and ARIA properties when duplicating UI components. Added explicit focus indicator styles (`focus-visible:ring-2`) to provide visual feedback for keyboard navigation against dark backgrounds.
