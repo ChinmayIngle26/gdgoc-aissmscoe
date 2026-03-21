@@ -110,6 +110,8 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
           className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           <motion.span
             animate={{
@@ -153,6 +155,9 @@ export default function Navbar() {
                 animate="animate"
                 exit="exit"
                 className="fixed top-0 right-0 z-40 flex place-content-center h-screen pt-28 w-3/4 bg-transparent/95 backdrop-blur-xl"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Navigation menu"
               >
                 <div className="flex flex-col items-center justify-center gap-12 clash-display text-3xl font-semibold">
                   {menuItems.map((item, index) => (
