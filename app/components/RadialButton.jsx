@@ -24,8 +24,9 @@ export default function RadialButton({ children, href }) {
   return (
     <motion.a
       href={href}
-      className="clash-display radial-bg border border-cream font-medium text-xl px-5 py-2 backdrop-blur-lg"
+      className="clash-display radial-bg border border-cream font-medium text-xl px-5 py-2 backdrop-blur-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8172e9] focus-visible:ring-offset-2"
       whileHover="hover"
+      whileFocus="hover"
       variants={buttonVariants}
       initial="initial"
     >
