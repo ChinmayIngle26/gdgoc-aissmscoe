@@ -1,0 +1,3 @@
+## 2024-05-18 - Copy-paste errors in `aria-label` and missing `whileFocus`
+**Learning:** Copy-pasting components often leads to incorrect `aria-label` values (e.g., `LinkedinButton` reading as "Join Whatsapp Group"). Also, Framer Motion animations on interactive elements often miss keyboard support because `whileHover` isn't paired with `whileFocus`.
+**Action:** Always verify `aria-label` content carefully after duplicating components. Always pair Framer Motion's `whileHover` with `whileFocus` to ensure interactive element animations are keyboard accessible, and accompany them with standard visual focus indicators using Tailwind utility classes (`focus-visible`).
