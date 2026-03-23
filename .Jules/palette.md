@@ -1,0 +1,3 @@
+## 2025-02-18 - Framer Motion Keyboard Accessibility
+**Learning:** Components using Framer Motion's `whileHover` for animations are not inherently keyboard accessible. Keyboard users navigating with Tab cannot trigger these animations or see a focus indicator, leading to a degraded experience.
+**Action:** Always pair `whileHover` with `whileFocus` in Framer Motion components to ensure keyboard users experience the same animations as mouse users. Additionally, combine this with Tailwind's `focus-visible` utility classes (e.g., `focus-visible:ring-2 focus-visible:outline-none`) to provide clear, native-like focus indicators.
