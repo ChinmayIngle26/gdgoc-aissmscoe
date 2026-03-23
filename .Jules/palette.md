@@ -1,0 +1,3 @@
+## 2024-05-15 - Interactive Accessibility with Framer Motion
+**Learning:** For UI components using Framer Motion, animations like `whileHover` do not automatically fire on keyboard focus. Screen reader and keyboard-only users will miss visual expansions or reveals unless `whileFocus` is explicitly mapped to the same animation target. Additionally, complex `whileHover` states on `.a` or `button` tags often mask the default browser focus ring, requiring explicit `focus-visible:ring-2` to ensure the currently focused item is discernible.
+**Action:** Always pair `whileHover` with `whileFocus` in Framer Motion components and explicitly define `focus-visible` ring utilities to ensure keyboard accessibility.
