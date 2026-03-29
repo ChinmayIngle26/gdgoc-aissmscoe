@@ -1,0 +1,3 @@
+## 2025-03-30 - Framer Motion Keyboard Accessibility and Copy-Paste Errors
+**Learning:** Found that social buttons relying on Framer Motion's `whileHover` for revealing text are completely inaccessible to keyboard users, preventing them from understanding what the buttons do without interacting. Also discovered a copy-paste error where the LinkedIn button had `aria-label="Join Whatsapp Group"`.
+**Action:** Always pair `whileHover` with `whileFocus` in Framer Motion components to ensure parity for keyboard users. Combine this with `focus-visible:ring-2` to provide clear visual focus indicators. Always double-check `aria-label` values when applying similar components to avoid copy-paste errors.
