@@ -1,0 +1,3 @@
+## 2024-03-31 - [Framer Motion and Decorative Images]
+**Learning:** When using Framer Motion's `whileHover` for interactive components, it's critical to pair it with `whileFocus` to ensure animations trigger for keyboard users navigating via Tab. Also, for components with an `aria-label` describing their function, child images (like icons) should have empty alt text (`alt=""`) and `aria-hidden="true"` to prevent screen readers from reading out redundant information.
+**Action:** Always add `whileFocus` alongside `whileHover`, and utilize Tailwind's `focus-visible` classes (like `focus-visible:outline-none focus-visible:ring-2`) to provide a clear focus indicator. Ensure purely decorative icons inside labeled interactive elements are explicitly hidden from screen readers.
