@@ -137,7 +137,7 @@ export default function Home() {
             </RadialButton>
             <Link
               href={"#events"}
-              className="bg-cream text-purple font-medium text-xl px-5 py-2 transition-all hover:scale-105 hover:backdrop-blur-lg hover:shadow-[0 0 20px rgba(129, 114, 233, 0.5)]"
+              className="bg-cream text-purple font-medium text-xl px-5 py-2 transition-all hover:scale-105 hover:backdrop-blur-lg hover:shadow-[0 0 20px rgba(129, 114, 233, 0.5)] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
             >
               Events
             </Link>
