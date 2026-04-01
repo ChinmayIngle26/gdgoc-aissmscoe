@@ -15,7 +15,8 @@ export default function WhatsappButton() {
       <img
         className="w-10 h-10"
         src="/Images/whatsapp.svg"
-        alt="Whatsapp Logo"
+        alt=""
+        aria-hidden="true"
       />
 
       {/* Text that appears on hover */}
