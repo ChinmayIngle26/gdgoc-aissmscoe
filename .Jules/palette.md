@@ -1,0 +1,3 @@
+## 2024-03-20 - Missing Keyboard Focus on Framer Motion & Copy-Paste A11y Errors
+**Learning:** Animated floating social buttons implemented with Framer Motion `whileHover` often miss equivalent keyboard support. Furthermore, duplicating these components frequently results in incorrect `aria-label`s and missing `target="_blank"` with `rel="noopener noreferrer"`.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion elements, add `focus-visible` Tailwind classes for visible indicators, and rigorously check `aria-label`s and external link attributes when components share a similar structure.
