@@ -1,0 +1,3 @@
+## 2024-10-24 - Accessible Framer Motion Icon Buttons
+**Learning:** For floating icon-only buttons using Framer Motion that expand to show text, we must pair `whileHover` with `whileFocus` so keyboard users can trigger the text expansion. Additionally, if the `motion.a` container has an `aria-label`, child images must have `alt=""` and `aria-hidden="true"` to prevent screen readers from reading both the container label and the image alt.
+**Action:** Always test Framer Motion expanding components via keyboard navigation (Tab), use `focus-visible` for focus rings, and ensure decorative icons inside labeled containers are hidden from assistive technology.
