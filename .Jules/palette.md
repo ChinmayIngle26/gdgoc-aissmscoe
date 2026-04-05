@@ -1,0 +1,3 @@
+## 2025-04-05 - Hover Buttons Accessibility
+**Learning:** Components relying heavily on Framer Motion's `whileHover` often neglect keyboard users, acting as inaccessible "ghost" components. Additionally, duplicate button patterns frequently copy over incorrect `aria-label`s.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion, add explicit `focus-visible` styles, and double-check all `aria-label` values for accuracy when applying changes to multiple similar components.
