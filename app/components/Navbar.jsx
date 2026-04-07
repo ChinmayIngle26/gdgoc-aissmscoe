@@ -107,6 +107,8 @@ export default function Navbar() {
 
         {/* Hamburger Icon */}
         <motion.button
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
           className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
