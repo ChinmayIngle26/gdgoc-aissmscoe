@@ -1,0 +1,3 @@
+## 2024-05-19 - Keyboard Accessibility for Framer Motion Interactive Elements
+**Learning:** For UI components using Framer Motion (like floating social buttons) that expand or reveal content on `whileHover`, screen reader and keyboard-only users will miss the content unless we explicitly pair it with `whileFocus` and proper focus styling. Also, copy-pasting components often leads to incorrect `aria-label`s.
+**Action:** Always verify `whileFocus` exists alongside `whileHover`, add `focus-visible:ring-2` to interactive elements, and double-check `aria-label`s when duplicating components. Also, explicitly add `target="_blank" rel="noopener noreferrer"` for external links.
