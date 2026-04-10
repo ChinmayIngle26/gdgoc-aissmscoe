@@ -1,0 +1,3 @@
+## 2024-05-18 - Framer Motion Accessibility and Copy-Paste Errors
+**Learning:** Components using Framer Motion `whileHover` for reveal/expand effects must also include `whileFocus` to ensure the same interactions are available to keyboard users. Additionally, copy-pasting components (e.g., social links) often leads to incorrect `aria-label`s and `alt` text. Always verify accessibility strings match the component's actual function. When an `aria-label` provides the context for a link, inner decorative images should have `alt=""` and `aria-hidden="true"`.
+**Action:** When implementing Framer Motion hover animations, always add the equivalent `whileFocus` properties. Double-check `aria-labels` and `alt` attributes when duplicating components.
