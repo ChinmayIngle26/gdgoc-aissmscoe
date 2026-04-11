@@ -1,0 +1,3 @@
+## 2024-05-14 - Keyboard Accessibility in Framer Motion Links
+**Learning:** Interactive components using Framer Motion's `whileHover` are completely inaccessible to keyboard users navigating via Tab unless paired with an equivalent `whileFocus` state. Additionally, `aria-label` copy-paste errors across similar social link components are a common accessibility trap. Decorative internal images inside links with `aria-label`s should be hidden using `alt=""` and `aria-hidden="true"`.
+**Action:** Always verify `whileHover` is paired with `whileFocus` (plus `focus-visible` styling) for floating action buttons or expandable links. Double-check `aria-label` values for accuracy when applying accessibility fixes across multiple similar files.
