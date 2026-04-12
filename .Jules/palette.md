@@ -1,0 +1,3 @@
+## 2024-05-18 - Framer Motion Animations & Keyboard Accessibility
+**Learning:** Animated reveals triggered by `whileHover` in Framer Motion are completely invisible to keyboard users unless explicitly paired with `whileFocus`. Furthermore, copy-pasting components like floating social buttons often leads to stale `aria-label`s and `alt` text, confusing screen reader users. Purely decorative icons inside labeled links should be hidden with `alt="" aria-hidden="true"`.
+**Action:** Whenever using `whileHover` for interactive elements, always pair it with `whileFocus` to ensure keyboard accessibility. Scrutinize `aria-label`s when duplicating components to ensure they accurately describe the new component's purpose.
