@@ -1,0 +1,3 @@
+## 2025-02-14 - Interactive Icons need whileFocus and empty alt text
+**Learning:** When using Framer Motion to expand interactive icon buttons on hover, keyboard users miss the expanded content (and thus the context) if `whileFocus` is omitted. Additionally, when a parent `<button>` or `<a>` tag has an explicit `aria-label`, leaving an `alt` tag on the inner `<img>` causes screen readers to announce the label twice.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion interactive elements, and add `focus-visible` styling to provide a clear focus indicator. For images inside components with `aria-label`, add `alt="" aria-hidden="true"` to prevent redundant screen reader announcements.
