@@ -1,0 +1,3 @@
+## 2025-04-15 - Accessible Framer Motion Reveal Animations
+**Learning:** When using Framer Motion's `whileHover` to reveal hidden elements (like expanding buttons), keyboard users miss the content entirely unless `whileFocus` is also added. Additionally, interactive elements with `aria-label` shouldn't contain images with redundant `alt` text, as screen readers will announce both.
+**Action:** Always pair `whileHover` with `whileFocus` for reveal animations and use `focus-visible` Tailwind classes for a clear focus ring. Set decorative image `alt=""` and `aria-hidden="true"` inside interactive elements that already have descriptive text or ARIA labels.
