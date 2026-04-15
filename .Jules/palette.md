@@ -1,0 +1,3 @@
+## 2026-04-15 - Floating Social Action Buttons Accessibility
+**Learning:** Social media floating links using Framer Motion expand on hover but remain unreadable and visually hidden to keyboard users navigating via Tab because they lack `whileFocus` and focus rings. Also, copy-pasting such buttons often leads to duplicated `aria-label`s and `alt` text.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion interactions, apply `focus-visible` styles, and ensure decorative child images have `alt=""` and `aria-hidden="true"` when the parent link provides context via `aria-label`.
