@@ -1,0 +1,3 @@
+## 2024-05-18 - [Accessible Team Member Cards]
+**Learning:** Social links within team member cards that are revealed exclusively via `group-hover:translate-y-0` are completely inaccessible to keyboard users navigating via Tab. Furthermore, icon-only links inside these cards lack descriptive names, causing screen readers to read out the raw URL or nothing useful.
+**Action:** Always pair `group-hover` with `group-focus-within` to ensure hidden interactive elements become visible and usable during native keyboard navigation. Add contextual `aria-label`s (e.g., "[Name]'s GitHub profile") to icon-only links, apply explicit focus rings (`focus-visible`), and hide decorative icons from screen readers using `aria-hidden="true"`.
