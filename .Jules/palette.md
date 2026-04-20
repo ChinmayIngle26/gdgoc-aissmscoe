@@ -1,0 +1,3 @@
+## 2024-04-20 - Ensure accessible aria-labels and states for interactive elements
+**Learning:** Copy-pasting components (like WhatsappButton to LinkedinButton) often leads to incorrect `aria-label` values that remain unnoticed. Also, custom hamburger menus built with Framer Motion often omit critical semantic attributes like `aria-expanded` and lack visible focus states, rendering them inaccessible to screen readers and keyboard users.
+**Action:** When implementing custom interactive elements, explicitly tie accessibility states like `aria-expanded` to the React state controlling visual transitions, and always double-check label values when applying similar fixes across multiple files.
