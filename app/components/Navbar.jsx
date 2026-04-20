@@ -108,8 +108,11 @@ export default function Navbar() {
         {/* Hamburger Icon */}
         <motion.button
           whileTap={{ scale: 0.9 }}
+          whileFocus={{ scale: 1.05 }}
           onClick={toggleMenu}
-          className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          className="lg:hidden z-50 flex flex-col gap-1.5 p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-cream rounded-md"
         >
           <motion.span
             animate={{
