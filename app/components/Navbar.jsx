@@ -109,7 +109,10 @@ export default function Navbar() {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
-          className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
+          aria-label="Toggle Navigation Menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          className="lg:hidden z-50 flex flex-col gap-1.5 p-2 focus-visible:ring-2 focus-visible:ring-cream focus:outline-none rounded"
         >
           <motion.span
             animate={{
@@ -140,6 +143,7 @@ export default function Navbar() {
         <AnimatePresence mode="wait">
           {menuOpen && (
             <motion.div
+              id="mobile-menu"
               key="menu-overlay"
               variants={backdropVariants}
               initial="initial"

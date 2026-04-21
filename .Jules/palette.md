@@ -1,0 +1,3 @@
+## 2024-05-14 - Tying Framer Motion States to Accessibility
+**Learning:** Visual-only transition components utilizing Framer Motion based on a react state (e.g., `menuOpen`) must explicitly link that state to standard ARIA attributes. A common pattern is missing `aria-expanded` and `aria-controls` on mobile hamburger toggles, resulting in a disconnected visual vs accessible state.
+**Action:** When building or modifying custom interactive elements with transition states (like Framer Motion hamburger menus or toggles), explicitly tie accessibility states like `aria-expanded` or `aria-pressed` to the React state variables controlling the visual transitions. Always pair keyboard navigation indicators (`focus-visible:ring-2`) directly onto the animated element container.
