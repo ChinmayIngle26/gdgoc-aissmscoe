@@ -1,0 +1,3 @@
+## 2025-02-12 - Framer Motion and Interactive Element Accessibility
+**Learning:** When building interactive elements like Framer Motion hamburger menus or toggles, visual transitions often disconnect from screen reader state. Additionally, adding descriptive `aria-label`s to parent elements makes child images redundant, leading to confusing double announcements for screen reader users.
+**Action:** Always explicitly tie accessibility states like `aria-expanded` or `aria-pressed` to the React state variables controlling the visual transitions. For parent links or buttons that already have an `aria-label`, explicitly add `alt=""` and `aria-hidden="true"` to any purely decorative inner images/icons to prevent redundant announcements.
