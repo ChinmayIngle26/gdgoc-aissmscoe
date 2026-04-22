@@ -1,0 +1,3 @@
+## 2024-04-23 - Dynamic ARIA Labels for Framer Motion Toggles
+**Learning:** When building interactive toggles (like hamburger menus) with Framer Motion, it's essential to dynamically tie the `aria-expanded` and `aria-label` attributes to the exact React state (`menuOpen`) controlling the visual transitions. This ensures screen readers announce the real-time state of the menu (e.g., "Close menu" vs. "Open menu").
+**Action:** Always pair `aria-expanded` and dynamic `aria-label` attributes with the state variables controlling interactive elements, and add `aria-controls` referencing the ID of the expanded container. Ensure proper focus styles (`focus-visible`) are present on custom buttons that lack native browser focus rings.
