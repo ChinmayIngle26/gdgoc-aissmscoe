@@ -1,0 +1,3 @@
+## 2024-05-20 - Adding ARIA labels to social icon links in Member cards
+**Learning:** Found an accessibility issue where social links in the Member component only had icons without textual descriptions. This is a common pattern for icon-only links that causes issues for screen reader users. Also noticed that hidden elements using `group-hover` need to be accessible via keyboard focus, requiring `group-focus-within`.
+**Action:** Always ensure icon-only links have clear `aria-label`s. Ensure that interactive elements hidden behind hover states use `group-focus-within` for keyboard navigation support.
