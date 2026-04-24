@@ -1,0 +1,3 @@
+## 2024-05-18 - Hamburger Menu Accessibility with Framer Motion
+**Learning:** When building or modifying custom interactive elements (like Framer Motion hamburger menus or toggles), it's crucial to explicitly tie accessibility states like `aria-expanded` or `aria-pressed`, dynamic `aria-label` attributes (e.g., 'Open menu' vs 'Close menu'), and `aria-controls` referencing the ID of the expanded container to the React state variables controlling the visual transitions. Also, remember to add `focus-visible:ring-2 focus-visible:outline-none` for keyboard focus indicators.
+**Action:** Always check interactive components (buttons, toggles, menus) using Framer Motion to ensure their visual state changes are reflected in ARIA attributes.
