@@ -1,0 +1,3 @@
+## 2024-04-29 - Social Button Accessibility Fixes
+**Learning:** Found a pattern of copy-paste ARIA errors in duplicated components (e.g., `aria-label="Join Whatsapp Group"` on the LinkedIn button) and missing `whileFocus` attributes for Framer Motion elements, making them inaccessible via keyboard navigation. Also found redundant alt text on images inside links that already have aria-labels.
+**Action:** When duplicating interactive components or updating them, ensure the ARIA labels are updated to match the specific action. Always pair `whileHover` with `whileFocus` to ensure keyboard accessibility. Use `alt=""` and `aria-hidden="true"` on decorative images inside links with explicit `aria-label`s.
