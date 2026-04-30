@@ -1,0 +1,3 @@
+## 2024-05-01 - Fix nested interactive elements and redundant image alts
+**Learning:** Avoid nesting interactive elements (like `<button>` inside `<a>`) as it causes invalid HTML and unpredictable screen reader behavior. Instead, use a single interactive element (e.g., `<a>`) styled as a button. Additionally, when a parent element (like an `<a>` tag) has a descriptive `aria-label`, any decorative images within it should have `alt=""` and `aria-hidden="true"` to prevent screen readers from announcing redundant information. Always verify copy-pasted components for leftover or incorrect ARIA attributes.
+**Action:** Always check the HTML validity of interactive elements and ensure screen reader announcements are concise and not repetitive.
