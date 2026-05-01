@@ -1,0 +1,5 @@
+## 2024-05-01 - Floating Social Buttons Accessibility and Layout
+
+**Learning:** Copy-pasted components often carry over incorrect ARIA labels (e.g., LinkedinButton labeled as "Join Whatsapp Group"). Framer Motion `whileHover` interactions without paired `whileFocus` are inaccessible to keyboard users, especially when the hover expands the element to reveal text. Fixed positioned interactive elements that stack vertically and expand horizontally are better structured using a flexbox container with `items-end` rather than individual `absolute` offsets, preventing overlap during width transitions and simplifying the layout.
+
+**Action:** Always verify `aria-label` accuracy when dealing with similar/duplicated components. Always pair `whileHover` with `whileFocus` and `focus-visible` styles for Framer Motion interactions. Utilize flexbox for stacking interactive fixed elements instead of relying on absolute coordinates. Ensure decorative child images within informative links use `alt=""` and `aria-hidden="true"`.
