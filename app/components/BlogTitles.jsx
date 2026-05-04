@@ -17,7 +17,7 @@ export default function BlogTitles({ blog }) {
         </p>
       </div>
       <div>
-        <FaArrowRightLong className="text-4xl group-hover:translate-x-2 transition-transform" />
+        <FaArrowRightLong aria-hidden="true" className="text-4xl group-hover:translate-x-2 group-focus-within:translate-x-2 transition-transform" />
       </div>
     </a>
   );
