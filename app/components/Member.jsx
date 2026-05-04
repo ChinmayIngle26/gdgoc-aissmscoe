@@ -17,7 +17,7 @@ export default function Member({ member }) {
             className="object-cover"
           />
         )}
-        <div className="absolute bottom-0 left-0 w-full flex justify-center gap-4 items-center transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out bg-gradient-to-b from-transparent via-purple/50 to-purple pb-3 pt-10">
+        <div className="absolute bottom-0 left-0 w-full flex justify-center gap-4 items-center transform translate-y-full group-hover:translate-y-0 group-focus-within:translate-y-0 transition-all duration-300 ease-in-out bg-gradient-to-b from-transparent via-purple/50 to-purple pb-3 pt-10">
           <div className="flex gap-4 justify-center">
             {member.github && (
               <Link href={member.github} target="_blank">

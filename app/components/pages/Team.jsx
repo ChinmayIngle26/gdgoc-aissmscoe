@@ -24,7 +24,7 @@ export default function Team({ teamLeads = [] }) {
           className="group clash-display bg-cream font-medium text-purple text-lg px-4 py-2 backdrop-blur-lg"
         >
           See All Team Members{" "}
-          <FaArrowRightLong className="inline-block ml-2 group-hover:translate-x-2 transition-all ease-in-out" />
+          <FaArrowRightLong aria-hidden="true" className="inline-block ml-2 group-hover:translate-x-2 group-focus-within:translate-x-2 transition-all ease-in-out" />
         </Link>
       </div>
     </div>
