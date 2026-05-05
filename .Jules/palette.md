@@ -1,0 +1,3 @@
+## 2025-02-12 - Floating Action Buttons Layout and Accessibility
+**Learning:** Absolute positioned floating action buttons inside a flex container create layout jank when hovering and lack keyboard visibility support. Applying manual offsets for multiple stacked buttons creates hard-to-maintain coordinates, and missing `pointer-events-none` on parent blocks underlying clicks.
+**Action:** Stack interactive buttons in a fixed `flex-col items-end pointer-events-none *:pointer-events-auto` parent. Pair framer-motion `whileHover` with `whileFocus`, and add Tailwind `focus-visible:ring-2` for consistent accessible states.
