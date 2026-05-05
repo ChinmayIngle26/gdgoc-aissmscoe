@@ -1,0 +1,3 @@
+## 2024-05-05 - Floating Buttons Accessibility Review
+**Learning:** Found an existing pattern of incorrectly using absolute positioning inside interactive buttons (`absolute right-0`), causing hit-box collision or overlap when multiple hover-expand buttons interact. Also found redundant alt text alongside aria-labels causing duplicated screen reader announcements.
+**Action:** When working with multiple expanding floating actions, apply `flex-col items-end` to the container and pointer-event separation (`pointer-events-none *:pointer-events-auto`) to correctly structure the flow without hardcoding absolute coordinates. Always set `alt=""` and `aria-hidden="true"` on internal SVGs when the parent link already has an `aria-label`.
