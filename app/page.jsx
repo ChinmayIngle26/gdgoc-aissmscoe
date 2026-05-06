@@ -33,7 +33,7 @@ export default async function HomePage() {
       <Team teamLeads={teamLeads} />
       <Blogs blogs={blogs} />
       <Gallery images={galleryImages} />
-      <div className="z-20 clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col gap-3 justify-end">
+      <div className="z-20 clash-display fixed right-4 bottom-4 md:right-10 md:bottom-10 flex flex-col items-end gap-3 pointer-events-none *:pointer-events-auto">
         <DiscordButton />
         <WhatsappButton />
         <LinkedinButton />
