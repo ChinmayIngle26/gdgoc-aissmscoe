@@ -1,0 +1,3 @@
+## 2025-05-07 - Accessible Floating Social Buttons with Framer Motion Container
+**Learning:** Fixed flex containers used to group elements like floating social buttons can inadvertently block pointer events from reaching elements placed underneath them (creating dead zones on the screen). Adding `focus-visible` styles explicitly ensures interactive components remain accessible for keyboard navigation. Copy-pasted components often carry over incorrect alt attributes or aria-labels.
+**Action:** Use Tailwind `pointer-events-none` on the floating container and `*:pointer-events-auto` on the child elements. Group properties correctly using CSS Flexbox layout values (like `items-end`) instead of depending solely on absolute values.
