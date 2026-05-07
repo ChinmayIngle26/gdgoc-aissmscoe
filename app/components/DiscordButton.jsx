@@ -15,7 +15,8 @@ export default function DiscordButton() {
       <img
         className="w-10 h-10"
         src="/Images/discord-icon.svg"
-        alt="Discord Logo"
+        alt=""
+        aria-hidden="true"
       />
 
       {/* Text that appears on hover */}
