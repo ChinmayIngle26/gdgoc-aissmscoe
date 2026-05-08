@@ -1,0 +1,4 @@
+
+## 2024-05-18 - Tying Accessibility States to Framer Motion Variables
+**Learning:** When building custom interactive elements with Framer Motion (like hamburger menus or toggles), the visual state transitions are often controlled by React state variables (like `menuOpen`). It's critical to tie accessibility attributes explicitly to these same state variables so that screen readers and keyboard users understand the UI changes simultaneously with the animations.
+**Action:** Always map the driving state variable of a visual toggle to standard accessibility attributes like `aria-expanded` (to indicate state), dynamic `aria-label` (e.g., "Open menu" vs "Close menu" for context), and `aria-controls` referencing the target container's `id`. This ensures both visual and structural clarity for all users.
