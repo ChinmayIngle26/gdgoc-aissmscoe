@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 export default function DiscordButton() {
   return (
     <motion.a
-      className=" flex items-center text-[#5865F2] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-xl absolute right-0"
+      className=" flex items-center text-[#5865F2] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-xl absolute right-0 focus-visible:ring-2 focus-visible:ring-[#5865F2] focus-visible:outline-none"
       aria-label="Join Discord Server"
       whileHover={{ width: "225px" }}
+      whileFocus={{ width: "225px" }}
       initial={{ width: "50px" }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       href="https://discord.gg/tqVFtwDeaS"
