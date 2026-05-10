@@ -1,0 +1,3 @@
+## 2024-05-17 - Floating Interactive Elements Layout & A11y
+**Learning:** Hardcoding `absolute` positioning within floating child elements makes layout scaling difficult and creates invisible bounding box traps that block background clicks. Also, screen readers read redundant image text if icons inside an `<a>` with `aria-label` are not hidden.
+**Action:** Use a single fixed flex container with `pointer-events-none *:pointer-events-auto` and `flex-col items-end` to group and align floating interactive elements. Always hide decorative child images inside labelled interactive elements using `alt="" aria-hidden="true"`. Make sure hover animations are mirrored with `whileFocus` for keyboard accessibility.
