@@ -1,0 +1,4 @@
+
+## 2025-02-12 - Keyboard Accessibility for Framer Motion Interactive Elements
+**Learning:** In interactive elements using `framer-motion` (like expand-on-hover social buttons), `whileHover` properties are purely mouse-driven. Without explicit `whileFocus` variants mapping to the same expansion behavior, keyboard-only users will not see the expanded text or visual cues when tabbing through the elements. Furthermore, icon-only buttons with contextual `aria-label`s should apply `alt=""` and `aria-hidden="true"` to their child SVGs or images to avoid redundant screen reader announcements.
+**Action:** When creating animated buttons with Framer Motion, systematically pair `whileHover` with `whileFocus`. Combine this with Tailwind's `focus-visible:ring-2 focus-visible:outline-none` for distinct, accessible focus indicators. Ensure child images are decorative if the parent provides the `aria-label`.
