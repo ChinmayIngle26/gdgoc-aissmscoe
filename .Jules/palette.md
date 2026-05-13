@@ -1,0 +1,3 @@
+## 2024-11-20 - Accessible Framer Motion Toggles
+**Learning:** When building custom interactive elements (like Framer Motion hamburger menus or toggles), the visual state transitions are not naturally announced to screen readers.
+**Action:** Explicitly tie accessibility states like `aria-expanded` or `aria-pressed`, dynamic `aria-label` attributes (e.g., 'Open menu' vs 'Close menu'), and `aria-controls` referencing the ID of the expanded container to the React state variables controlling the visual transitions. Always pair these with explicit keyboard focus indicators (e.g., `focus-visible:ring-2 focus-visible:outline-none`) to ensure keyboard users are aware of the currently focused interactive element.
