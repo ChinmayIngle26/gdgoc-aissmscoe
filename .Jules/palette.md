@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessible Framer Motion Hamburger Menus
+**Learning:** When building custom interactive elements like Framer Motion hamburger menus, visual state changes (like the "X" cross icon) aren't communicated to screen readers.
+**Action:** Always explicitly tie accessibility states (`aria-expanded`, dynamic `aria-label` like "Open menu"/"Close menu", and `aria-controls` referencing the ID of the expanded container) to the React state variables controlling the visual transitions. Ensure keyboard users can see focus by pairing these interactive `<motion.button>` elements with tailwind focus styles (`focus-visible:ring-2 focus-visible:outline-none`).
