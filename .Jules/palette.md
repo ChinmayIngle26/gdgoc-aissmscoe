@@ -1,0 +1,3 @@
+## 2024-05-18 - Framer Motion Keyboard Accessibility & Pointer Events
+**Learning:** `whileHover` animations in Framer Motion do not automatically trigger on keyboard focus. They must be explicitly paired with `whileFocus` to ensure interactive elements are accessible to keyboard users. Additionally, fixed containers wrapping expanding interactive elements can block clicks on underlying content. Using `pointer-events-none` on the container and `pointer-events-auto` on its children resolves this while maintaining layout.
+**Action:** Always verify keyboard accessibility of animated elements and use `pointer-events` utilities for overlay containers.
