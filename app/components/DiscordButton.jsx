@@ -4,27 +4,29 @@ import { motion } from "framer-motion";
 export default function DiscordButton() {
   return (
     <motion.a
-      className=" flex items-center text-[#5865F2] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-xl absolute right-0"
+      className="flex items-center text-[#5865F2] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-xl absolute right-0 focus-visible:ring-2 focus-visible:ring-[#5865F2] focus-visible:outline-none"
       aria-label="Join Discord Server"
       whileHover={{ width: "225px" }}
+      whileFocus={{ width: "225px" }}
       initial={{ width: "50px" }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       href="https://discord.gg/tqVFtwDeaS"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      {/* Discord Icon */}
       <img
         className="w-10 h-10"
         src="/Images/discord-icon.svg"
-        alt="Discord Logo"
+        alt=""
+        aria-hidden="true"
       />
 
-      {/* Text that appears on hover */}
       <motion.span
         className="ml-2"
         style={{ whiteSpace: "nowrap" }}
-        initial={{ opacity: 0, x: 0 }} // Hidden and shifted left initially
-        animate={{ opacity: 1, x: 0 }} // Visible and centered on hover
-        transition={{ delay: 0.2, duration: 0.3 }} // Smooth fade and slide
+        initial={{ opacity: 0, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
       >
         Join Discord Server
       </motion.span>
