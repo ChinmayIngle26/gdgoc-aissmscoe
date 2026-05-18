@@ -1,0 +1,3 @@
+## $(date +%Y-%m-%d) - Dynamic Accessibility Attributes on Animated Toggles
+**Learning:** When using Framer Motion to animate custom hamburger menus, relying purely on visual animation states leaves screen reader users without context. Dynamic states like `menuOpen` must be explicitly bound to `aria-expanded` and `aria-label` (e.g., swapping "Open menu" to "Close menu") to ensure the accessibility tree reflects the current UI state.
+**Action:** Always map React state variables controlling complex visual transitions (like Framer Motion toggles) to their corresponding ARIA attributes (`aria-expanded`, `aria-pressed`) and ensure the controlled container is explicitly linked via `aria-controls` with a matching `id`.
