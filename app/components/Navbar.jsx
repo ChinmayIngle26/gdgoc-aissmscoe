@@ -108,8 +108,13 @@ export default function Navbar() {
         {/* Hamburger Icon */}
         <motion.button
           whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.1 }}
+          whileFocus={{ scale: 1.1 }}
           onClick={toggleMenu}
-          className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          className="lg:hidden z-50 flex flex-col gap-1.5 p-2 focus-visible:ring-2 focus-visible:outline-none rounded-md"
         >
           <motion.span
             animate={{
@@ -140,6 +145,7 @@ export default function Navbar() {
         <AnimatePresence mode="wait">
           {menuOpen && (
             <motion.div
+              id="mobile-menu"
               key="menu-overlay"
               variants={backdropVariants}
               initial="initial"
