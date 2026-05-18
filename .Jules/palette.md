@@ -1,0 +1,3 @@
+## 2025-01-26 - Accessible Floating Fixed Containers and Framer Motion Symmetry
+**Learning:** When using fixed containers for floating elements, apply `pointer-events-none` to the container and `*:pointer-events-auto` to children to prevent the invisible container box from blocking clicks on underlying content. Always pair `whileHover` with `whileFocus` for Framer Motion interactive components to ensure keyboard accessibility, as keyboard users cannot trigger hover states.
+**Action:** Use `items-end` in a flex column instead of absolute positioning and offset coordinates for stacked floating elements. Always add `focus-visible:ring-2 focus-visible:outline-none` when using `whileFocus` to provide clear visual feedback to keyboard users.
