@@ -1,0 +1,3 @@
+## 2023-10-27 - Floating Button Keyboard Accessibility & Layout
+**Learning:** Fixed absolute positioning on individual floating interactive elements creates alignment issues during width animations (like Framer Motion hover expansions). Also, hover-only expansions hide functionality from keyboard users.
+**Action:** Group floating elements in a `flex-col` container with `items-end pointer-events-none *:pointer-events-auto` to handle layout and expansion direction natively without blocking the page content below. Always pair `whileHover` with `whileFocus` for Framer Motion interactive components.
