@@ -1,0 +1,3 @@
+## 2026-05-19 - Expandable Icon Buttons Accessibility
+**Learning:** When using Framer Motion's `whileHover` to reveal text in icon-only buttons, keyboard users are excluded unless `whileFocus` is also explicitly implemented to mirror the animation. Additionally, providing an `aria-label` on the interactive element requires pairing it with `alt="" aria-hidden="true"` on the inner decorative icon to prevent redundant or confusing screen reader announcements.
+**Action:** Always pair `whileHover` with `whileFocus` for expandable UI patterns, include visual focus indicators (e.g., `focus-visible:ring-2`), and ensure inner graphical elements are explicitly hidden from assistive tech when the parent element already provides complete context via `aria-label`.
