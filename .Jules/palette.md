@@ -1,0 +1,3 @@
+## 2024-05-23 - Accessible Framer Motion Hamburger Menus
+**Learning:** When building custom interactive elements like Framer Motion hamburger menus, visual transitions must be explicitly tied to accessibility states like `aria-expanded` or dynamic `aria-label` attributes to ensure screen readers can announce the state changes.
+**Action:** Always link React state controlling animations to ARIA states (e.g., `aria-expanded={menuOpen}`), ensure dynamic ARIA labels update with state, tie `aria-controls` to the expanded container ID, and combine `whileFocus` with standard `focus-visible` classes for complete keyboard accessibility.
