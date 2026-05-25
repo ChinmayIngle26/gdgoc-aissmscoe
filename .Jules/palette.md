@@ -1,0 +1,3 @@
+## 2026-05-25 - Fixed Expanding Action Buttons Container Clicks
+**Learning:** When using a fixed flex container to group floating interactive elements (like social overlays), the container's invisible bounding box can block clicks on the underlying page content. Also, absolute positioning of expanding children within this container breaks flex alignment.
+**Action:** Apply Tailwind classes `pointer-events-none` to the fixed container and `*:pointer-events-auto` to its children. Use `flex-col items-end` on the container instead of manual absolute offsets on the children to ensure they expand inward cleanly without blocking background interactions.
