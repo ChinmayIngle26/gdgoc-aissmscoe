@@ -4,18 +4,20 @@ import { motion } from "framer-motion";
 export default function LinkedinButton() {
   return (
     <motion.a
-      className="flex items-center text-[#0e7ac7] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl absolute right-0 bottom-32"
-      aria-label="Join Whatsapp Group"
+      className="flex items-center text-[#0e7ac7] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl focus-visible:ring-2 focus-visible:outline-none"
+      aria-label="Follow on LinkedIn"
       whileHover={{ width: "210px" }} // Expands to 200px on hover
+      whileFocus={{ width: "210px" }}
       initial={{ width: "50px" }} // Starts with only the icon
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       href="https://www.linkedin.com/company/gdg-on-campus-aissmscoe/"
     >
       {/* Discord Icon */}
       <img
-        className="w-10 h-10"
+        className="w-10 h-10 shrink-0"
         src="/Images/linkedin-svgrepo-com.svg"
-        alt="Whatsapp Logo"
+        alt=""
+        aria-hidden="true"
       />
 
       {/* Text that appears on hover */}
