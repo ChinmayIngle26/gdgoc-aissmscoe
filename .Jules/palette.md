@@ -1,0 +1,3 @@
+## 2024-05-27 - Framer Motion Keyboard Accessibility & Icon Buttons
+**Learning:** Animated expandable elements relying on `whileHover` are inaccessible via keyboard unless accompanied by `whileFocus` mirroring the animation state. Also, using SVGs inside `aria-label` wrapped links causes screen reader redundancy if not marked decorative (`alt=""` and `aria-hidden="true"`). Finally, an image within a flexing parent needs `shrink-0` to avoid squashing during parent width animations.
+**Action:** Pair `whileFocus` with `whileHover` in Framer Motion components. Use `focus-visible:ring-2` for visual indication. Add `aria-hidden="true"` and empty `alt` to child icons when the parent has an explicit `aria-label`. Apply `shrink-0` to images in animated flex containers.
