@@ -1,0 +1,3 @@
+## 2024-05-29 - Accessible Hamburger Menu
+**Learning:** Animated overlay menus using Framer Motion require tying dynamic `aria-expanded` and `aria-label` properties strictly to the boolean state triggering the `AnimatePresence`. Decorative icon span elements inside the menu button don't need independent `aria-hidden` when the parent button correctly encapsulates the interactive state.
+**Action:** Always ensure disclosure widgets explicitly link the button to the expanded container via `aria-controls` referencing an exact `id`, and provide `whileFocus` and visible focus classes to make Framer Motion interactive components fully keyboard accessible.
