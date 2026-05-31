@@ -1,0 +1,3 @@
+## 2024-06-01 - Social Buttons Accessibility and Layout
+**Learning:** Framer Motion components using `whileHover` do not trigger on keyboard focus by default, hiding interactive expansion states from keyboard users. Furthermore, when grouping floating interactive elements in a fixed container, a full-size container blocks clicks to the underlying page.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion interactive elements. For fixed overlays, apply `pointer-events-none` to the container and `*:pointer-events-auto` to the children, and manage stacking cleanly with `flex-col items-end` instead of individual absolute positioning coordinates.
