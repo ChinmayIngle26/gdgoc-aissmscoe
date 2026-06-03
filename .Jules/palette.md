@@ -1,0 +1,3 @@
+## 2024-05-19 - Accessible Floating Social Buttons
+**Learning:** Icon-only floating action buttons using Framer Motion (`whileHover`) often lack keyboard accessibility. When elements transition widths on hover (e.g., from an icon to text + icon), keyboard users miss this information unless `whileFocus` is explicitly paired with `whileHover`. Additionally, icons inside interactive elements with explicit `aria-label`s must be hidden from screen readers (`aria-hidden="true"`, `alt=""`) to avoid redundant announcements.
+**Action:** Always pair `whileHover` with `whileFocus` for Framer Motion interactions, add clear `focus-visible` ring indicators, and ensure decorative icons inside labelled buttons have `alt=""` and `aria-hidden="true"`.
