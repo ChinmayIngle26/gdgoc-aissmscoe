@@ -1,0 +1,3 @@
+## 2025-02-20 - Framer Motion Keyboard Accessibility & Flex Container Events
+**Learning:** Fixed positioning wrappers can block underlying interactions, and Framer Motion components need explicit focus handlers. Screen readers also announce purely decorative images redundantly if the parent has an `aria-label`.
+**Action:** When using fixed wrappers for floating actions, use `pointer-events-none *:pointer-events-auto` so only the buttons capture clicks. Always pair `whileHover` with `whileFocus` for Framer Motion interactive elements, add `focus-visible:ring-2 focus-visible:outline-none`, use `shrink-0` on images animating inside flex containers, and apply `alt="" aria-hidden="true"` on decorative images inside buttons with explicit `aria-label`s.
