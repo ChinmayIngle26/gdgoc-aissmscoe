@@ -1,0 +1,3 @@
+## 2024-05-15 - Framer Motion Accessibility and Flex Transitions
+**Learning:** Framer Motion components using `whileHover` to reveal content via width transitions can be inaccessible to keyboard users unless paired with `whileFocus`. Additionally, expanding a flex container can inadvertently squash child images unless explicitly prevented, and screen reader labels on interactive wrappers make child image alt text redundant.
+**Action:** Always pair `whileHover` with `whileFocus` for reveal animations, add Tailwind `focus-visible` classes for keyboard focus, apply `shrink-0` to static flex children during transitions, and use `alt="" aria-hidden="true"` on decorative images inside labeled interactive elements.
