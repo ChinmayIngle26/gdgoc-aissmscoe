@@ -1,0 +1,3 @@
+## 2024-05-18 - Accessibility for Floating Social Components
+**Learning:** Decorative icons inside interactive components with `aria-label`s cause redundant screen reader announcements unless explicitly hidden. Additionally, Framer Motion's `whileHover` requires a corresponding `whileFocus` to ensure keyboard navigation triggers the same visual state as mouse hover.
+**Action:** Always add `alt=""` and `aria-hidden="true"` to decorative child icons within components that provide an explicit `aria-label`. Always pair `whileHover` with `whileFocus` and use Tailwind's `focus-visible:ring-2 focus-visible:outline-none` for focus states.
