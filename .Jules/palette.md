@@ -1,0 +1,3 @@
+## 2024-06-13 - Floating Social Buttons UX & Accessibility
+**Learning:** The floating social buttons relied on hardcoded absolute positions and lacked visual focus indicators. Additionally, the images within elements that have `aria-label`s need `alt=""` and `aria-hidden="true"` to prevent redundant screen reader announcements. Using `pointer-events-none` on the parent container with `*:pointer-events-auto` allows for a semantic flex layout while letting clicks pass through the invisible wrapper.
+**Action:** Updated social buttons to use flex flow, added Framer Motion `whileFocus` states paired with Tailwind `focus-visible` classes, and improved accessibility by hiding decorative images from screen readers and correcting inaccurate `aria-label`s.
