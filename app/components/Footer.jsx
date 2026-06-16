@@ -45,18 +45,21 @@ export default function Footer() {
               <Link
                 href="https://www.instagram.com/gdg.aissmscoe/"
                 className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+                aria-label="Follow GDG AISSMS COE on Instagram"
               >
                 <FaInstagram /> Instagram
               </Link>
               <Link
                 href="https://www.linkedin.com/company/gdg-on-campus-aissmscoe/"
                 className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+                aria-label="Follow GDG AISSMS COE on LinkedIn"
               >
                 <FaLinkedin /> Linkedin
               </Link>
               <Link
                 href="https://www.github.com/adwait-rao"
                 className="flex gap-2 items-center justify-center lg:justify-start underline-effect"
+                aria-label="View GDG AISSMS COE GitHub Profile"
               >
                 <FaGithub /> Github
               </Link>
@@ -70,6 +73,7 @@ export default function Footer() {
         <a
           href="mailto:gdgocaissmscoe@gmail.com"
           className="flex gap-2 text-lg justify-center align-middle mb-4 hover:text-lightPurple transition-all"
+          aria-label="Email GDG AISSMS COE at dsc@aissmscoe.com"
         >
           <BiLogoGmail className="w-6 h-6" /> dsc@aissmscoe.com
         </a>
