@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessible Floating Social Buttons
+**Learning:** Floating action buttons built with Framer Motion frequently lack keyboard navigation support (`whileFocus`), clear focus indicators (`focus-visible`), and can block underlying content clicks due to their container's bounding box. Additionally, copy-pasting such components often leads to incorrect ARIA labels and redundant alt text on decorative icons.
+**Action:** When implementing interactive floating elements, ensure `whileHover` is paired with `whileFocus`, use `focus-visible` for keyboard indicators, apply `pointer-events-none` to the container with `*:pointer-events-auto` for children, and use `alt="" aria-hidden="true"` for decorative icons inside elements with explicit `aria-label`s.
