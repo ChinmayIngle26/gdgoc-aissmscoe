@@ -1,0 +1,3 @@
+## 2024-06-18 - Floating Social Buttons UX & Accessibility
+**Learning:** When using Framer Motion on interactive elements that resize on hover, omitting `whileFocus` removes the animation cue for keyboard users. Decorative SVGs inside `aria-label` elements can cause redundant screen reader announcements, and images without `shrink-0` may squash during expansion. Additionally, invisible fixed container hitboxes can block interactions with the underlying page.
+**Action:** Always pair `whileHover` with `whileFocus`, add `focus-visible` styles, use `alt="" aria-hidden="true"` on decorative images within labeled buttons, apply `shrink-0` to prevent squashing during width animations, and apply `pointer-events-none *:pointer-events-auto` to bounding containers.

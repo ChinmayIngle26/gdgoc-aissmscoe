@@ -4,18 +4,19 @@ import { motion } from "framer-motion";
 export default function WhatsappButton() {
   return (
     <motion.a
-      className="flex items-center text-[#1a9949] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl absolute right-0 bottom-16"
+      className="flex items-center text-[#1a9949] font-semibold bg-cream rounded-full px-2 py-1 overflow-hidden shadow-2xl absolute right-0 bottom-16 focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-[#1a9949]"
       aria-label="Join Whatsapp Group"
-      whileHover={{ width: "280px" }} // Expands to 200px on hover
+      whileHover={{ width: "280px" }}
+      whileFocus={{ width: "280px" }} // Expands to 200px on hover
       initial={{ width: "50px" }} // Starts with only the icon
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       href="https://chat.whatsapp.com/GhxluByMZ45BAoc6KB3rtV"
     >
       {/* Discord Icon */}
       <img
-        className="w-10 h-10"
+        className="w-10 h-10 shrink-0"
         src="/Images/whatsapp.svg"
-        alt="Whatsapp Logo"
+        alt="" aria-hidden="true"
       />
 
       {/* Text that appears on hover */}
