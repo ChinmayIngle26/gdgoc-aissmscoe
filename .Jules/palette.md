@@ -1,0 +1,3 @@
+## 2024-06-20 - Accessible Expanding Social Buttons
+**Learning:** When using Framer Motion to expand floating social buttons on hover, keyboard users miss the interaction. Additionally, fixed containers covering screen areas prevent interaction with elements underneath. Decorative images within `aria-label` links get redundantly read by screen readers.
+**Action:** Always pair `whileHover` with `whileFocus` for motion elements. Add `focus-visible` styles for keyboard navigation. Use `pointer-events-none *:pointer-events-auto` on the fixed floating container so clicks pass through. Set `alt=""` and `aria-hidden="true"` on images when the parent has an `aria-label`. Use `shrink-0` on images during width animations.
