@@ -1,0 +1,3 @@
+## $(date +%Y-%m-%d) - Floating Button Keyboard Accessibility & Click-through
+**Learning:** Framer Motion's `whileHover` on interactive elements doesn't inherently support keyboard navigation. Using a fixed container for interactive elements without `pointer-events-none` can block clicks on the underlying content.
+**Action:** Always pair `whileHover` with `whileFocus` on interactive Framer Motion components, apply Tailwind's `focus-visible` classes, apply `shrink-0` to images inside expanding buttons, and use `pointer-events-none` on wrapper containers with `*:pointer-events-auto` on children.
