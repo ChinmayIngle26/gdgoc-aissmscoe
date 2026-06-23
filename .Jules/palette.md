@@ -1,3 +1,7 @@
 ## 2025-01-24 - Accessible Expandable Floating Action Buttons
 **Learning:** Expanding action buttons utilizing Framer Motion's `whileHover` can become inaccessible for keyboard navigation. Additionally, floating button containers block interaction on underlying elements. Screen readers vocalize purely decorative icons inside interactive buttons with `aria-label` attributes.
 **Action:** Pair `whileHover` with `whileFocus` to ensure focusability for keyboard users. Combine with Tailwind's `focus-visible:ring-2 focus-visible:outline-none` for explicit visible focus indicators. Apply `pointer-events-none` to fixed containers with `*:pointer-events-auto` applied to child elements to make only the buttons interactive. Append `alt=""` and `aria-hidden="true"` to strictly decorative graphics where contextual `aria-label`s are already defined.
+
+## 2025-01-25 - Accessible Hamburger Menu
+**Learning:** Icon-only hamburger menus frequently lack ARIA labels, making them invisible or confusing to screen reader users. Additionally, without visible focus states, keyboard-only users cannot easily tell when they are focused on the navigation menu toggle.
+**Action:** Always add dynamic `aria-label` and `aria-expanded` attributes to hamburger buttons reflecting their current state (e.g., `aria-label={isOpen ? "Close menu" : "Open menu"}`). Combine this with robust `focus-visible` Tailwind classes like `focus-visible:ring-2 focus-visible:outline-none` to provide clear keyboard focus indicators.
