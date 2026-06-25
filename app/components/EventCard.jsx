@@ -32,10 +32,13 @@ export default function EventCard({ event }) {
       </p>
       <div>
         {event.rsvpLink && (
-          <a href={event.rsvpLink} target="_blank" rel="noopener noreferrer">
-            <button className="font-semibold text-darkPurple bg-lightPink hover:bg-lightPurple hover:text-cream transition-colors px-4 py-2 btn-pink-slidein">
-              RSVP Now
-            </button>
+          <a
+            href={event.rsvpLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-semibold text-darkPurple bg-lightPink hover:bg-lightPurple hover:text-cream transition-colors px-4 py-2 btn-pink-slidein focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-lightPink focus-visible:ring-offset-2 focus-visible:ring-offset-darkPurple"
+          >
+            RSVP Now
           </a>
         )}
       </div>
