@@ -1,0 +1,3 @@
+## 2024-06-25 - Floating Components & Animation A11y
+**Learning:** Fixed or absolute flex containers for side-aligned elements can create an invisible bounding box that blocks interactions with the underlying page content. Also, Framer Motion animations triggered by `whileHover` are inaccessible to keyboard users unless paired with `whileFocus`. Finally, flex container width animations can cause child icons to squash if not protected by `shrink-0`.
+**Action:** Always use `pointer-events-none` on floating wrapper containers with `*:pointer-events-auto` to restore interactivity to children. Pair `whileHover` with `whileFocus` and `focus-visible` classes. Use `shrink-0` on images inside expanding flex buttons.
