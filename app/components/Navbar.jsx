@@ -109,7 +109,10 @@ export default function Navbar() {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={toggleMenu}
-          className="lg:hidden z-50 flex flex-col gap-1.5 p-2"
+          className="lg:hidden z-50 flex flex-col gap-1.5 p-2 rounded-md focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-cream"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <motion.span
             animate={{
@@ -152,6 +155,7 @@ export default function Navbar() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
+                id="mobile-menu"
                 className="fixed top-0 right-0 z-40 flex place-content-center h-screen pt-28 w-3/4 bg-transparent/95 backdrop-blur-xl"
               >
                 <div className="flex flex-col items-center justify-center gap-12 clash-display text-3xl font-semibold">
