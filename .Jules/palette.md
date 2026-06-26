@@ -1,0 +1,3 @@
+## 2024-05-23 - Floating Action Buttons & Framer Motion Accessibility
+**Learning:** Framer Motion components that expand on whileHover are inaccessible to keyboard users unless explicitly paired with whileFocus. Animated flex containers cause child icons to squash unless protected by shrink-0. Fixed/absolute containers for floating elements block clicks unless styled with pointer-events-none and *:pointer-events-auto.
+**Action:** Always pair whileHover with whileFocus on interactive motion elements, use shrink-0 on fixed-size child images, apply focus-visible utilities, and use pointer-events trick for floating containers.
