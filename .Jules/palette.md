@@ -1,0 +1,3 @@
+## 2024-06-28 - Accessible Floating Action Buttons
+**Learning:** Grouping fixed position floating action buttons inside a container creates an invisible bounding box that traps clicks, preventing users from interacting with underlying page content. Additionally, flex children inside width-animated containers can squash if not protected, and `framer-motion`'s `whileHover` must always be paired with `whileFocus` for keyboard accessibility.
+**Action:** Apply `pointer-events-none` to fixed wrappers and `*:pointer-events-auto` to restore interaction on the buttons themselves. Add `shrink-0` to images inside animated flex containers. Always add `whileFocus` alongside `whileHover` and explicit `focus-visible` ring classes to ensure keyboard navigation visibility.
