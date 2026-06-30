@@ -1,0 +1,3 @@
+## 2024-07-01 - Social Buttons Accessibility and Container UX
+**Learning:** Floating fixed containers with multiple interactive elements (like social buttons) can unintentionally block clicks on underlying page content due to their invisible bounding box. Additionally, `framer-motion`'s `whileHover` animations must be paired with `whileFocus` to ensure keyboard navigation triggers the same helpful tooltips or expansions.
+**Action:** Apply `pointer-events-none *:pointer-events-auto` to fixed containers to allow click-through while keeping children interactive. Pair `whileHover` with `whileFocus` and standard Tailwind `focus-visible` classes for fully accessible Framer Motion elements.
