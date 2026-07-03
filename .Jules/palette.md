@@ -1,0 +1,3 @@
+## 2024-07-04 - Accessible Framer Motion Buttons and Click-Through Containers
+**Learning:** Floating, position-fixed containers holding social buttons can inadvertently block clicks on underlying content due to their bounding boxes. Additionally, interactive Framer Motion components using `whileHover` are inaccessible via keyboard navigation if `whileFocus` isn't explicitly paired.
+**Action:** Apply `pointer-events-none` to the floating container and `*:pointer-events-auto` to its children to allow click-throughs. Always pair Framer Motion's `whileHover` with `whileFocus` and include `focus-visible` Tailwind classes for clear keyboard focus indication.
