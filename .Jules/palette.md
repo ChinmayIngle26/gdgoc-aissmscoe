@@ -1,0 +1,3 @@
+## 2024-05-14 - Interactive floating action button accessibility
+**Learning:** For interactive elements relying on `whileHover` (Framer Motion) or CSS hover for functionality (like expanding to reveal text), always pair it with `whileFocus` or `focus` equivalents to ensure the same information is accessible via keyboard navigation. Additionally, when grouping floating interactive elements in a fixed container, use `pointer-events-none *:pointer-events-auto` on the wrapper so users can still click the underlying page content.
+**Action:** Always test interactive UI elements without a mouse to ensure hover states have keyboard-accessible fallbacks, and verify fixed UI overlays don't block interaction with underlying content unnecessarily.
